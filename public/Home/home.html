@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <script defer src="./js/home.js"></script>
+    <header class="header">
+        <img id="logo" src="./pics/logo for store  .png">
+        <h1 id="header-h1">SEE</h1>
+        <h1 id="header-h2">STORE</h1>
+        <a href= "/login" > Login/Register</a>
+        <div class="search">
+            <div class="search-box" id="search-box" method="get">
+              <button id="search-button" type="submit" onclick="filterItems();">  <i class='bx bx-search-alt-2'></i> </button>
+                <input id="search-input" type="search" placeholder="Search" class="search-input">
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-menu">
+            <h2 class="link-name">menu</h2>
+            <i class='bx bx-menu-alt-left'></i>
+        </div>
+        <ul class="list-item"  id="filter">
+            <li class="list-item active" id="all">
+                <a onclick="filterAll()" id="all">
+                    <i class='bx bx-chevrons-right'></i>
+                    <span class="link-name"  style="--i:1;">All</span>
+                </a>
+            </li>
+            <li class="list-item" id="sport shoes">
+                <a onclick="filterSport()" id="sport shoes">
+                    <i class='bx bx-chevrons-right'></i>
+                    <span class="link-name"  style="--i:1;">sport shoes</span>
+                </a>
+            </li>
+            <li class="list-item"  id="suit">
+                <a onclick="filterSuit()" id="suit">
+                    <i class='bx bx-chevrons-right'></i>
+                    <span class="link-name" style="--i:2;">suit</span>
+                </a>
+            </li>
+            <li class="list-item" id="boy's toys" >
+                <a onclick="filterToys()" id="boy's toys">
+                    <i class='bx bx-chevrons-right'></i>
+                    <span class="link-name"   style="--i:3;">boy's toys</span>
+                </a>
+            </li>
+            <li class="list-item" id="technolegy" >
+                <a onclick="filtertechnolegy()" id="technolegy">
+                    <i class='bx bx-chevrons-right'></i>
+                    <span class="link-name"  style="--i:4;">technolegy</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="#">
+                    <i class='bx bx-cart-download'></i>
+                    <span class="link-name" style="--i:5;">your products</span>
+                </a>
+            </li>
+            <small id="cart-count">0</small>
+            <li class="list-item">
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="link-name" style="--i:6;">info</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="BTR"></div>
+    <div class="container">
+        <button class="logout">log out</button>
+        <h1 class="greeting"> </h1>
+    </div>
+
+
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+
+    <div id="output">
+        <div class="content" id="mycontent">
+
+        </div>
+
+    </div>
+
+    <footer class="footer-top">
+        <div class="box box-1" style="--img: url(../pics/shopping-1.jpg);" data-text="S"></div>
+        <div class="box box-2" style="--img: url(../pics/shopping-2.jpg);" data-text="T"></div>
+        <div class="box box-3" style="--img: url(../pics/shopping-3.jpg);" data-text="O"></div>
+        <div class="box box-4" style="--img: url(../pics/shopping-4.jpg);" data-text="R"></div>
+        <div class="box box-5" style="--img: url(../pics/shopping-5.jpg);" data-text="E">
+        </div>
+
+
+    </footer>
+
+    <footer class="footer">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <h1 id="footer-h1">
+            <p>m.thaeer.93@gmail.com</p>
+        </h1>
+        <h1 id="footer-h1">
+            <p>+963/937458212</p>
+        </h1>
+        <h1 id="footer-h2">
+            <p> &#9993;</p>
+        </h1>
+        <h1 id="footer-h3">
+            <p>&#9990;</p>
+        </h1>
+    </footer>
+    </div>
+
+</body>
+
+</html>
