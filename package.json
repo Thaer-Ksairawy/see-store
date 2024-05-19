@@ -12,7 +12,8 @@
   "engines": {
     "node": "20"
   },
-
+  "build": "npm run generate-html && vite build",
+  "generate-js": "mkdir -p dist && cp index.js dist/",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
