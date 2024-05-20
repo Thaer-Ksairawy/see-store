@@ -10,10 +10,9 @@
   "author": "thaer ksairawy",
   
   "engines": {
-    "node": "20"
+    "node": "18.x"
   },
-  "build": "npm run generate-html && vite build",
-  "generate-js": "mkdir -p dist && cp index.js dist/",
+ 
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
