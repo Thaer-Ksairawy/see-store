@@ -13,7 +13,7 @@
     "node": "20"
   },
   "build": "npm run generate-html && vite build",
-  "generate-js": "mkdir -p dist && cp index.js dist/",
+  "generate-html": "mkdir -p dist && cp index.html dist/",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
