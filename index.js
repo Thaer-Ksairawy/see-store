@@ -6,8 +6,21 @@ import productRoutes from "./routes/product-routes.js";
 import  UserRoutes from "./routes/user-routes.js";
 import { RegisterUser, UserLogIn } from "./controllers/user-controller.js";
 
+
+
 const port = 5000 || process.env.PORT;
 const app = express();
+
+
+app.get('/data/all', async (req, res) => {
+  try {
+    const data = await db.query('SELECT * FROM products');
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ error: 'Unable to fetch data' });
+  }
+});
+
 
 const allowedOrigins = [
   null,
