@@ -28,10 +28,9 @@ bxbutton.addEventListener('click', () => {
     sidebar.classList.toggle('active');
 });
 //////////////////////////////////
-const port = 5000 || process.env.PORT;
 let DATA;
 async function get() {
-    const response = await fetch(`http://127.0.0.1:${port}/data/all`);
+    const response = await fetch(`http://127.0.0.1:4000/data/all`);
     const data = await response.json();
     DATA = data.data
     return DATA
@@ -114,7 +113,7 @@ const displaySections = async () => {
 }
 
 const deleteitem = async (id) => {
-    const response = await fetch(`http://127.0.0.1:${port}/data/${id}`,
+    const response = await fetch(`http://127.0.0.1:4000/data/${id}`,
         {
             method: "DELETE",
             headers: {
@@ -283,7 +282,7 @@ async function sendInfo(e) {
 
     console.log(object)
 
-    const response = await fetch("https://35.160.120.126:4000/data/all",
+    const response = await fetch("http://127.0.0.1:4000/data",
         {
             method: "POST",
             headers: {
@@ -345,7 +344,7 @@ const updateInfo = async () => {
 
     console.log(object)
 
-    const response = await fetch(`http://127.0.0.1:5000/data/${id}`,
+    const response = await fetch(`http://127.0.0.1:4000/data/${id}`,
         {
 
             method: "PATCH",

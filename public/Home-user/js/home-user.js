@@ -31,7 +31,7 @@ bxbutton.addEventListener('click', () => {
 //////////////////////////////////
 let DATA;
 async function get() {
-    const response = await fetch('https://44.233.151.27:4000/data/all');
+    const response = await fetch('http://127.0.0.1:4000/data/all');
     const data = await response.json();
     DATA = data.data
     return DATA
