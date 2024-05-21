@@ -9,7 +9,7 @@ import { configDotenv } from "dotenv";
 
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 const app = express();
 
 
@@ -24,6 +24,8 @@ const allowedOrigins = [
   "http://localhost:5000",
   "http://127.0.0.1:5000",
   "http://127.0.0.1:5502",
+  "http://127.0.0.1:4000",
+  "http://localhost:4000",
   "*",
 ];
 app.use(
@@ -49,5 +51,5 @@ app.use("/", UserRoutes)
 
 
 app.listen(port, () =>
-  console.log(`Example app listening on port 5000!`),
+  console.log(`Example app listening on port ${port}!`),
 );
