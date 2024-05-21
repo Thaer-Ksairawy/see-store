@@ -28,7 +28,7 @@ bxbutton.addEventListener('click', () => {
 //////////////////////////////////
 let DATA;
 async function get() {
-    const response = await fetch('https://see-store-3.onrender.com/Home/data/all');
+    const response = await fetch('http://localhost:4000/data/all');
     const data = await response.json();
     DATA = data.data
     return DATA
