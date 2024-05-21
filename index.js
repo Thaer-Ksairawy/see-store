@@ -15,7 +15,7 @@ const app = express();
 app.get('/data/all', async (req, res) => {
   try {
     const data = await db.query('SELECT * FROM products');
-    res.json(data);
+    res.json(data[0]);
   } catch (error) {
     res.status(500).json({ error: 'Unable to fetch data' });
   }
