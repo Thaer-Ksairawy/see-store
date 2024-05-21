@@ -54,6 +54,6 @@ app.use("/", UserRoutes)
 
 
 
-app.listen(port, () =>
+app.listen(4000, () =>
   console.log(`Example app listening on port ${port}!`),
 );
