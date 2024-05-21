@@ -283,7 +283,7 @@ async function sendInfo(e) {
 
     console.log(object)
 
-    const response = await fetch("http://127.0.0.1:${port}/data",
+    const response = await fetch("https://35.160.120.126:4000/data/all",
         {
             method: "POST",
             headers: {
