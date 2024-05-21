@@ -26,6 +26,7 @@ const allowedOrigins = [
   "http://127.0.0.1:5502",
   "http://127.0.0.1:4000",
   "http://localhost:4000",
+  "http://35.160.120.126:4000",
   "*",
 ];
 app.use(
