@@ -26,10 +26,9 @@ bxbutton.addEventListener('click', () => {
     sidebar.classList.toggle('active');
 });
 //////////////////////////////////
-const port = 5000 || process.env.PORT;
 let DATA;
 async function get() {
-    const response = await fetch(`http://localhost:${port}/data/all`);
+    const response = await fetch(`http://localhost:5000/data/all`);
     const data = await response.json();
     DATA = data.data
     return DATA

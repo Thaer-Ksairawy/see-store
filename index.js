@@ -5,21 +5,13 @@ import  SiteRouter from "./routes/site-routes.js";
 import productRoutes from "./routes/product-routes.js";
 import  UserRoutes from "./routes/user-routes.js";
 import { RegisterUser, UserLogIn } from "./controllers/user-controller.js";
+import { configDotenv } from "dotenv";
 
 
 
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
 const app = express();
 
-
-app.get('/data/all', async (req, res) => {
-  try {
-    const data = await db.query('SELECT * FROM products');
-    res.json(data[0]);
-  } catch (error) {
-    res.status(500).json({ error: 'Unable to fetch data' });
-  }
-});
 
 
 const allowedOrigins = [
