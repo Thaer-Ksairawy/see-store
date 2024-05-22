@@ -61,7 +61,7 @@ const validateData = (data) => {
     } else {
         sessionStorage.name = data.name;
         sessionStorage.email = data.email;
-       if(data.role == 0 ){
+       if(data.role === 0 ){
         location.href = '/Home-user'
        } else{
         location.href = '/Home-admin'
