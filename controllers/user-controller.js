@@ -26,8 +26,9 @@ export const UserLogIn = (req, res) => {
 
 
 export const RegisterUser = (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, role } = req.body;
   /////// this is a way to inseart data into database////
+let userRole = role || "0";
   if (!name.length || !email.length || !password.length) {
     res.json("fill all the fields"); //res.json() is used to send json data from server to client
   } else {
@@ -35,6 +36,8 @@ export const RegisterUser = (req, res) => {
       name: name,
       email: email,
       password: password,
+      role: userRole,
+
     })
       .then((data) => {
         res.json(data.toJSON());
