@@ -66,7 +66,7 @@ const validateData = (data) => {
        } else{
         location.href = '/Home-admin'
        }
-
+       sessionStorage.clear();
     }
 }
 
