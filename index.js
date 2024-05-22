@@ -30,6 +30,7 @@ const allowedOrigins = [
   "http://44.233.151.27:4000",
   "http://35.160.120.126",
   "https://35.160.120.126:4000",
+  "https://see-store-3.onrender.com",
   "*",
 ];
 app.use(
