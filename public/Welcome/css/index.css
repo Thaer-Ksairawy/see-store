@@ -98,11 +98,19 @@ a:hover{
         font-size: 5vh;
     }
 }
+@media only screen and (max-width: 1700px) {
+    video {
+        width:700px;
+        padding-top: 120px;
+        padding-left: 50px;
 
+        
+    }
+}
 @media only screen and (max-width: 1200px) {
     video {
         width:700px;
-        padding-top: 150px;
+        padding-top: 120px;
         padding-left: 50px;
 
         
@@ -111,10 +119,15 @@ a:hover{
 @media only screen and (max-width: 800px) {
     video {
         width:500px;
-        padding-top: 200px;
+        padding-top: 120px;
         padding-left: 70px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+}
 }
 @media only screen and (max-width: 600px) {
     video {
@@ -123,6 +136,12 @@ a:hover{
         padding-left: 70px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-width: 550px) {
     video {
@@ -131,6 +150,12 @@ a:hover{
         padding-left: 40px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-width: 440px) {
     video {
@@ -139,6 +164,12 @@ a:hover{
         padding-left: 15px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-width: 420px) {
     video {
@@ -147,6 +178,12 @@ a:hover{
         padding-left: 10px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-width: 380px) {
     video {
@@ -155,6 +192,12 @@ a:hover{
         padding-left: 10px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-width: 370px) {
     video {
@@ -163,6 +206,12 @@ a:hover{
         padding-left: 10px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-width: 300px) {
     video {
@@ -171,10 +220,18 @@ a:hover{
         padding-left: 40px;
         
     }
+    .overlay {
+        top: 15%;
+        left: 25%;
+        z-index:1;
+
+}
 }
 @media only screen and (max-height: 600px) {
     .overlay {
         top: 15%;
         left: 25%;
+        z-index:1;
+
 }
 }
